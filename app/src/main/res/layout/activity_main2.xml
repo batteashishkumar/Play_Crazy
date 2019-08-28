@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/sliver"
+        android:weightSum="10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".8"
+            android:background="@color/ash"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <TextView
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="SCORE:"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:autoSizeTextType="uniform"/>
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="23"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:autoSizeTextType="uniform"
+                    android:background="@color/colorAccent"/>
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="wicket:"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:autoSizeTextType="uniform"/>
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="2"
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:padding="10dp"
+                android:autoSizeTextType="uniform"
+                android:background="@color/colorAccent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/myImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/over_ball" />
+
+                <TextView
+                    android:id="@+id/ball_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/myImageView"
+                    android:layout_alignTop="@id/myImageView"
+                    android:layout_alignRight="@id/myImageView"
+                    android:layout_alignBottom="@id/myImageView"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="1.5"
+                    android:textSize="50dp"
+                    android:textColor="@color/ash" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.2"
+            android:layout_margin="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RUNS:"
+                    android:id="@+id/runs"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/runs"
+                    android:text="1"
+                    android:id="@+id/run1_txt"
+                    android:textSize="30sp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/runs"
+                    android:layout_toRightOf="@+id/run1_txt"
+                    android:text="2"
+                    android:id="@+id/run2_txt"
+                    android:textSize="30sp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/runs"
+                    android:layout_toRightOf="@+id/run2_txt"
+                    android:text="3"
+                    android:id="@+id/run3_txt"
+                    android:textSize="30sp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/runs"
+                    android:layout_toRightOf="@+id/run3_txt"
+                    android:text="4"
+                    android:textColor="@color/red"
+                    android:id="@+id/run4_txt"
+                    android:textSize="30sp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/run1_txt"
+                    android:text="dot"
+                    android:id="@+id/dot"
+                    android:textSize="30sp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/run1_txt"
+                    android:layout_toRightOf="@+id/dot"
+                    android:text="+1"
+                    android:id="@+id/plus1"
+                    android:textSize="30sp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/run4_txt"
+                    android:layout_alignRight="@+id/run4_txt"
+                    android:textColor="@color/red"
+                    android:text="6"
+                    android:id="@+id/run6_txt"
+                    android:textSize="30sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dot"
+                    android:id="@+id/extras_txt"
+                    android:text="EXTRAS:"
+                    android:textSize="25sp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/extras_txt"
+                    android:id="@+id/wide_btn"
+                    android:text="wide"
+                    android:textSize="25sp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/extras_txt"
+                    android:layout_toRightOf="@+id/wide_btn"
+                    android:id="@+id/noball_btn"
+                    android:text="no ball"
+                    android:textSize="25sp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/extras_txt"
+                    android:layout_toRightOf="@id/noball_btn"
+                    android:lines="1"
+                    android:text="wicket"
+                    android:id="@+id/wicket_btn"
+                    android:textColor="@color/red"
+                    android:textSize="25sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

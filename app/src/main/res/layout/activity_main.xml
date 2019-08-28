@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:weightSum="10"
+      android:background="@color/colorAccent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:weightSum="5"
+        android:orientation="horizontal">
+      <ImageView
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="2"
+          android:background="@color/ash"
+          android:src="@drawable/cric_logo"/>
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="3"
+          android:gravity="center"
+          android:padding="10dp"
+          android:background="@color/ash"
+          android:text="Play Crazy"
+          android:textSize="50dp"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="6"
+    android:background="@color/sliver"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+  <ImageView  android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="3"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="100dp"
+      android:layout_marginRight="100dp"
+      android:src="@drawable/coin1"
+      android:id="@+id/coinimg"
+      android:onClick="Toss"
+       />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="2"
+      android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="overs*:"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/over_spin"
+        android:entries="@array/overs">
+
+    </Spinner>
+  </LinearLayout>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:layout_weight="5"
+     android:gravity="center_horizontal"
+     android:orientation="vertical">
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:text="Start Match"
+       android:onClick="startmatch"
+       android:layout_margin="25dp"
+       android:background="@drawable/round"
+       android:textSize="30sp"/>
+ </LinearLayout>
+</LinearLayout>
+
+  </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
